@@ -4,9 +4,11 @@
 /**
  * CONTENTS.............You're reading it!
  * ANNOUNCEMENTS........Styles for home page announcements
+ * BREADCRUMBS..........Styles for the breadcrumb trail
  * COLORS...............Background colors
  * FEATURE_ITEM.........Styles for the feature item box
  * FOOTER...............Styles specific to the footer
+ * HERO.................Styles for the hero images
  * LEAVES...............Styles for the top navigation "leaves"
  * LISTS................Styles related to lists
  * NAVIGATION...........Styles specific to the top level navigation
@@ -30,6 +32,17 @@
 .announcements .alert-danger h4 > a:hover {
   /*** TODO: test for contrast */
   color: #932430;
+}
+
+
+
+
+/*------------------------------------*\
+    $BREADCRUMBS
+\*------------------------------------*/
+
+.breadcrumb {
+  background-color: transparent;
 }
 
 
@@ -162,6 +175,30 @@ footer .login-wrapper {
 
 
 /*------------------------------------*\
+    $HERO
+\*------------------------------------*/
+
+.hero .office-name {
+  background-color: white;
+  bottom: 0;
+  color: #222;
+  font-size: 2.5rem;
+  left: 0;
+  opacity: 70%;
+  padding: 0.3rem 2rem;
+  position: absolute;
+  width: 100%;
+}
+.hero .office-name a {
+  color: #222;
+}
+.hero .office-name a:hover {
+  color: #000;
+}
+
+
+
+/*------------------------------------*\
     $LEAVES
 \*------------------------------------*/
 
@@ -246,6 +283,16 @@ footer .login-wrapper {
 .navbar.navbar-global {
   padding: .1rem 1rem;
 }
+
+.navbar-office .navbar-nav .nav-link {
+  color: #ddd;
+}
+.navbar-office .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+
+
 
 
 /* Responsive breakpoint statements
