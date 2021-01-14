@@ -1,15 +1,20 @@
-Educational Equity theme
+# Mockups for the new Educational Equity website theme
+
+Simple HTML/CSS mockups of the new theme for the Educational Equity website.
 
 
-Credits:
+## Credits:
 
-    Initial template:
-        [StartBootstrap Business Frontpage](https://github.com/BlackrockDigital/startbootstrap-business-frontpage/)
+### Initial template:
 
-    Icons:
-        Font Awesome (fortawesome.github.com/Font-Awesome)
+* [StartBootstrap Business Frontpage](https://github.com/BlackrockDigital/startbootstrap-business-frontpage/)
 
-    Other:
-        Bootstrap 4 (getbootstrap.com)
-        html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-        jQuery (jquery.com)
+### Icons:
+
+* Font Awesome (fortawesome.github.com/Font-Awesome)
+
+### Other:
+
+* Bootstrap 4 (getbootstrap.com)
+* html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+* jQuery (jquery.com)
