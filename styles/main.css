@@ -11,6 +11,7 @@
  * FOOTER...............Styles specific to the footer
  * HERO.................Styles for the hero images
  * LEAVES...............Styles for the top navigation "leaves"
+ * LINKS................Styles for accessible links
  * LISTS................Styles related to lists
  * NAVIGATION...........Styles specific to the top level navigation
  */
@@ -61,7 +62,7 @@
   }
   .actions-list li div {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
 
