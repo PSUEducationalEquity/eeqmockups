@@ -238,13 +238,9 @@ footer .login-wrapper {
 
 .hero .office-name {
   background-color: white;
-  bottom: 0;
   color: #222;
-  font-size: 2.5rem;
-  left: 0;
-  opacity: 70%;
+  font-size: 1.3rem;
   padding: 0.3rem 2rem;
-  position: absolute;
   width: 100%;
 }
 .hero .office-name a {
@@ -253,6 +249,20 @@ footer .login-wrapper {
 .hero .office-name a:hover {
   color: #000;
 }
+
+@media (min-width: 768px) {
+  .hero .office-name {
+    bottom: 0;
+    font-size: 2.5rem;
+    left: 0;
+    opacity: 70%;
+    position: absolute;
+  }
+}
+@media (min-width: 992px) {
+}
+
+
 
 
 
