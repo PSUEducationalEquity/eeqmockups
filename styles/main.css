@@ -238,12 +238,14 @@ footer .login-wrapper {
     $HERO
 \*------------------------------------*/
 
-.hero .office-name {
+.hero .office-name-wrapper {
   background-color: white;
   color: #222;
   font-size: 1.2rem;
-  padding: 0.3rem 2rem;
   width: 100%;
+}
+.hero .office-name {
+  padding: 0.3rem 2rem;
 }
 .hero .office-name a {
   color: #222;
@@ -253,20 +255,18 @@ footer .login-wrapper {
 }
 
 @media (min-width: 768px) {
-  .hero.collapsed .office-name {
+  .hero.collapsed .office-name-wrapper {
     bottom: 0;
     font-size: 2.5rem;
     left: 0;
     opacity: 70%;
     position: absolute;
   }
-  .hero .office-name {
+  .hero .office-name-wrapper {
     font-size: 1.5rem;
     opacity: 100%;
     position: relative;
   }
-}
-@media (min-width: 992px) {
 }
 
 
