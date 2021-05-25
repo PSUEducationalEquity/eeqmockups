@@ -10,6 +10,7 @@
  * FEATURE_ITEM.........Styles for the feature item box
  * FOOTER...............Styles specific to the footer
  * HERO.................Styles for the hero images
+ * LAYOUT...............Styles for the overall layout
  * LEAVES...............Styles for the top navigation "leaves"
  * LINKS................Styles for accessible links
  * LISTS................Styles related to lists
@@ -271,6 +272,18 @@ footer .login-wrapper {
 
 
 
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+.constrain-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+
+
 
 /*------------------------------------*\
     $LEAVES
@@ -346,16 +359,16 @@ footer .login-wrapper {
     $NAVIGATION
 \*------------------------------------*/
 
+.navbar.navbar-header .constrain-width {
+  align-items: flex-start;
+}
+.navbar.navbar-header .constrain-width .navbar-collapse {
+  margin-top: -0.5rem;
+}
 .navbar.navbar-header .navbar-nav {
   font-size: 100%;
 }
 @media (min-width: 992px) {
-  .navbar.navbar-header .navbar-collapse {
-    position: absolute;
-    top: 0;
-    right: 10px;
-  }
-
   .navbar.navbar-header .navbar-nav {
     font-size: 80%;
   }
