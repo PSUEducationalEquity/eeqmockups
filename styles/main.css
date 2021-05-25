@@ -251,12 +251,17 @@ footer .login-wrapper {
 }
 
 @media (min-width: 768px) {
-  .hero .office-name {
+  .hero.collapsed .office-name {
     bottom: 0;
     font-size: 2.5rem;
     left: 0;
     opacity: 70%;
     position: absolute;
+  }
+  .hero .office-name {
+    font-size: 1.5rem;
+    opacity: 100%;
+    position: relative;
   }
 }
 @media (min-width: 992px) {
