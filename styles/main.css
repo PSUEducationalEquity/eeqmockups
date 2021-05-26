@@ -10,6 +10,7 @@
  * FEATURE_ITEM.........Styles for the feature item box
  * FOOTER...............Styles specific to the footer
  * HERO.................Styles for the hero images
+ * LAYOUT...............Styles for the overall layout
  * LEAVES...............Styles for the top navigation "leaves"
  * LINKS................Styles for accessible links
  * LISTS................Styles related to lists
@@ -237,12 +238,14 @@ footer .login-wrapper {
     $HERO
 \*------------------------------------*/
 
-.hero .office-name {
+.hero .office-name-wrapper {
   background-color: white;
   color: #222;
-  font-size: 1.3rem;
-  padding: 0.3rem 2rem;
+  font-size: 1.2rem;
   width: 100%;
+}
+.hero .office-name {
+  padding: 0.3rem 2rem;
 }
 .hero .office-name a {
   color: #222;
@@ -252,22 +255,32 @@ footer .login-wrapper {
 }
 
 @media (min-width: 768px) {
-  .hero.collapsed .office-name {
+  .hero.collapsed .office-name-wrapper {
     bottom: 0;
     font-size: 2.5rem;
     left: 0;
     opacity: 70%;
     position: absolute;
   }
-  .hero .office-name {
+  .hero .office-name-wrapper {
     font-size: 1.5rem;
     opacity: 100%;
     position: relative;
   }
 }
-@media (min-width: 992px) {
-}
 
+
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+.constrain-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
 
 
 
@@ -346,16 +359,16 @@ footer .login-wrapper {
     $NAVIGATION
 \*------------------------------------*/
 
+.navbar.navbar-header .constrain-width {
+  align-items: flex-start;
+}
+.navbar.navbar-header .constrain-width .navbar-collapse {
+  margin-top: -0.5rem;
+}
 .navbar.navbar-header .navbar-nav {
   font-size: 100%;
 }
 @media (min-width: 992px) {
-  .navbar.navbar-header .navbar-collapse {
-    position: absolute;
-    top: 0;
-    right: 10px;
-  }
-
   .navbar.navbar-header .navbar-nav {
     font-size: 80%;
   }
@@ -365,6 +378,12 @@ footer .login-wrapper {
     border-radius: 0;
   }
 }
+
+.navbar-brand img { width: 200px; }
+@media (min-width: 576px) {
+  .navbar-brand img { width: 270px; }
+}
+
 
 .navbar.navbar-global {
   padding: .1rem 1rem;
